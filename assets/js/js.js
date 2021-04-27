@@ -100,8 +100,8 @@ const displayWeather = (weatherCall, city) => {
 
   forecastContainer.innerHTML = `
   <h3>5-Day Forecast:</h3>
-  <div class="row">
-    <div class="card col">
+  <div class="row justify-content-around">
+    <div class="card col-12 col-lg-2">
       <h4 class="card-title">${moment(currentDate)
         .add(1, "days")
         .format("l")}</h4>
@@ -119,7 +119,7 @@ const displayWeather = (weatherCall, city) => {
         Humidty: ${weatherCall.daily[1].humidity}%
       </p>
     </div>
-    <div class="card col">
+    <div class="card col-12 col-lg-2">
       <h4 class="card-title">${moment(currentDate)
         .add(2, "days")
         .format("l")}</h4>
@@ -137,7 +137,7 @@ const displayWeather = (weatherCall, city) => {
         Humidty: ${weatherCall.daily[2].humidity}%
       </p>
     </div>
-    <div class="card col">
+    <div class="card col-12 col-lg-2">
       <h4 class="card-title">${moment(currentDate)
         .add(3, "days")
         .format("l")}</h4>
@@ -155,7 +155,7 @@ const displayWeather = (weatherCall, city) => {
         Humidty: ${weatherCall.daily[3].humidity}%
       </p>
     </div>
-    <div class="card col">
+    <div class="card col-12 col-lg-2">
       <h4 class="card-title">${moment(currentDate)
         .add(4, "days")
         .format("l")}</h4>
@@ -173,7 +173,7 @@ const displayWeather = (weatherCall, city) => {
         Humidty: ${weatherCall.daily[4].humidity}%
       </p>
     </div>
-    <div class="card col">
+    <div class="card col-12 col-lg-2">
       <h4 class="card-title">${moment(currentDate)
         .add(5, "days")
         .format("l")}</h4>
